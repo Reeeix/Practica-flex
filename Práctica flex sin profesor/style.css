@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: "Parkinsans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+body {
+  background-color: var(--rrg-background-color);
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  display: flex;
+  flex-direction: column;
+  gap:80px;
+}
+
+:root {
+ --rrg-background-color: #302D42;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+header img {
+  width: 200px;
+}
+
+.navbar {
+  width: 40%;
+}
+
+ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+}
+
+button {
+  height: 50px;
+  width: 150px;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+
+
+.buttons :nth-child(1) {
+  background-color: var(--rrg-background-color);
+  border-color: white;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.buttons :nth-child(2) {
+  background: linear-gradient(90deg, rgba(132,121,180,1) 0%, rgba(181,174,219,1) 100%);
+  color: var(--rrg-background-color);
+ text-transform: uppercase;
+ font-weight: 700;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+main > section {
+  /* width: 50%; */
+  height: 100%;
+  padding: 40px;
+}
+
+.info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+}
+
+.info > h2 {
+  font-size: 45px;
+  color: white;
+  width: 80%;
+}
+
+.info span {
+    font-size: 50px;
+    color: #B6ACE0;
+}
+
+.info > p {
+    font-size: 20px;
+    color: white;
+    width: 80%;
+}
+
+.info > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left:90px;
+  gap: 30px;
+
+}
+
+.info  button {
+  background: linear-gradient(90deg, rgba(132,121,180,1) 0%, rgba(181,174,219,1) 100%);
+}
+
+.flechita {
+  height: 80px;
+}
+.foto-chica {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.chica {
+  height: 400px;
+
+
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  background: linear-gradient(90deg, rgba(32,30,44,1) 0%, rgba(57,50,84,1) 50%, rgba(32,30,44,1) 98%);
+  justify-content: space-around;
+  width: 95%;
+  align-self: center;
+  padding: 30px;
+  border-radius: 60px ;
+}
+
+footer > div {
+  display: flex;
+  border-right: 1px solid #6F698A;
+  width: 100%;
+  justify-content: center;
+  gap:10px;
+  color: white;
+}
+
+
+button :hover {
+  cursor: pointer;
+}
+
+.icono {
+  width: 60px;
+}
+
+@media(max-width:1150px) {
+  body {
+    gap:40px;
+  }
+  /* Header */
+  header {
+    flex-direction: column;
+    gap:20px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+ .buttons {
+  justify-items: center;
+ }
+ /* Main */
+ main {
+  flex-direction:column;
+ }
+ section {
+  width: 100%;
+ }
+ .info {
+  width: 100%;
+  justify-content: center;
+ }
+ .info > div {
+  justify-content: center;
+ }
+ .foto-chica {
+  justify-content: center;
+ }
+
+/* Footer */
+
+footer {
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+}
+
+footer > div {
+  border-right: none;
+  border-bottom:  1px solid #6F698A; 
+}
+ 
+}
+
